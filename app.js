@@ -2,7 +2,7 @@
 document.getElementById('button1').addEventListener('click', ()=>{
     getJoke()
     .then(data => {
-        console.log(data);
+        //console.log(data);
         const question = `<p class="text-white fs-1 fw-bold">${data.setup}</p>`;
         document.getElementById('output').innerHTML = question;
         document.getElementById('answer').innerHTML = '';
